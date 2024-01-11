@@ -167,6 +167,10 @@ RoomFormer can be easily extended to predict room types, doors and windows. We p
 ./tools/eval_stru3d_sem_rich.sh
 ### Train:
 ./tools/train_stru3d_sem_rich.sh
+envs/roomformer/lib/python3.11/site-packages/descartes/patch.py
+t.exterior->t.exterior.coords
+IndexError: too many indices for array: array is 0-dimensional, but 2 were indexedk
+https://stackoverflow.com/questions/75287534/indexerror-descartes-polygonpatch-wtih-shapely
 ```
 
 ## Citation

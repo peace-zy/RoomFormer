@@ -95,7 +95,7 @@ def plot_floorplan_with_regions(regions, corners=None, edges=None, scale=256):
     colors = colors_12
 
     regions = [(region * scale / 256).round().astype(np.int) for region in regions]
-
+    #regions = [(region * scale / 256).round().astype(np.int32) for region in regions]
     # define the color map
     room_colors = [colors[i] for i in range(len(regions))]
 
